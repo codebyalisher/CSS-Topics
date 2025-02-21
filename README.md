@@ -737,3 +737,8 @@ In summary, **display** controls the type of box an element generates,
 element or the viewport, and **float** controls whether an element should float
 to the left or right within its containing element. These properties are
 fundamental for creating layouts and positioning elements on a webpage.
+
+## Important Things to remember!About Box Model
+1-if we are using box model with width like 100% and also set the padding,margin etc and this mean padding and margin will also include in this width,as width is calculated as by adding the padding either left,right,top,bottom,similar for margin and content,so if we set all these things then we have to minimize the width.
+so what if we also want to add the margin,pading without changing the width then we have to set the **box-sizing:border-box** which automatically consider the margin,padding as the part of width so as by setting this now we will dont have scrolling on either left or right side.**line-height** property is basically set to height of text inside the box or `to center the text vertically`. to set the text in `center` we will do it as `horizontaly` by **text-align:center** , 
+2-to set the two box consectively each other we will set the parent div clearfix and child float property,actually we do cear:both property in parent as we remove height from parent but we want that these two child's should have 
